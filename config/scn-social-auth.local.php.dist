@@ -1,0 +1,55 @@
+<?php
+/**
+ * PixelpinAuth Configuration
+ *
+ * If you have a ./config/autoload/ directory set up for your project, you can
+ * drop this config file in it and change the values as you wish.
+ */
+$settings = array(
+    /**
+     * PixelPin Client ID
+     *
+     * Please specify a PixelPin Client ID
+     */
+    //'pixelpin_client_id' => 'your-client-id',
+
+    /**
+     * PixelPin Secret
+     *
+     * Please specify a PixelPin Secret
+     */
+    //'pixelpin_secret' => 'your-secret',
+
+    /**
+     * To enable Logging, set debug_mode to true,
+     * then provide a path of a writable file on debug_file on your configuration file
+     *
+     * Default: false
+     * Accepted Values: boolean (true or false)
+     * 
+     * @see http://hybridauth.sourceforge.net/userguide/Debugging_and_Logging.html
+     */
+    // 'debug_mode' => false,
+
+    /**
+     * To enable Logging, set debug_mode to true,
+     * then provide a path of a writable file on debug_file on your configuration file or hash
+     *
+     * Default: "/tmp/hybridauth.log"
+     * Accepted Values: string
+     * 
+     * @see http://hybridauth.sourceforge.net/userguide/Debugging_and_Logging.html
+     */
+    // 'debug_file' => "/tmp/hybridauth.log",
+
+    /**
+     * End of PixelpinAuth configuration
+     */
+);
+
+/**
+ * You do not need to edit below this line
+ */
+return array(
+    'pixelpin-auth' => $settings,
+);

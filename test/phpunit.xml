@@ -1,0 +1,7 @@
+<phpunit bootstrap="./Bootstrap.php" colors="true">
+  <testsuites>
+    <testsuite name="PixelpinAuth Module Tests">
+      <directory>./PixelpinAuthTest</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

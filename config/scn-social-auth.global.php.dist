@@ -1,0 +1,52 @@
+<?php
+/**
+ * PixelpinAuth Configuration
+ *
+ * If you have a ./config/autoload/ directory set up for your project, you can
+ * drop this config file in it and change the values as you wish.
+ */
+$settings = array(
+    /**
+     * Zend\Db\Adapter\Adapter DI Alias
+     *
+     * Please specify the DI alias for the configured Zend\Db\Adapter\Adapter
+     * instance that ZfcUserPixelpin should use.
+     */
+    //'zend_db_adapter' => 'Zend\Db\Adapter\Adapter',
+
+    /**
+     * Zend\Session\SessionManager DI Alias
+     *
+     * Please specify the DI alias for the configured Zend\Session\SessionManager
+     * instance that PixelpinAuth should use.
+     */
+    //'zend_session_manager' => 'Zend\Session\SessionManager',
+
+    /**
+     * User Provider Entity Class
+     *
+     * Name of Entity class to use. Useful for using your own entity class
+     * instead of the default one provided. Default is PixelpinAuth\Entity\UserProvider.
+     */
+    //'user_provider_entity_class' => 'PixelpinAuth\Entity\UserProvider',
+
+    /**
+     * PixelPin Enabled
+     *
+     * Please specify if PixelPin is enabled
+     */
+    //'pixelpin_enabled' => true,
+);
+
+/**
+ * You do not need to edit below this line
+ */
+return array(
+    'pixelpin-auth' => $settings,
+    'service_manager' => array(
+        'aliases' => array(
+            'PixelpinAuth_ZendDbAdapter' => (isset($settings['zend_db_adapter'])) ? $settings['zend_db_adapter']: 'Zend\Db\Adapter\Adapter',
+            'PixelpinAuth_ZendSessionManager' => (isset($settings['zend_session_manager'])) ? $settings['zend_session_manager']: 'Zend\Session\SessionManager',
+        ),
+    ),
+);
