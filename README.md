@@ -1,6 +1,6 @@
 PixelpinAuth
 =============
-Uses the HybridAuth PHP library to Enable authentication via PixelPin!, etc for the ZfcUserPixelpin ZF2 module.
+Uses the HybridAuth PHP library to Enable authentication via PixelPin for the ZfcUserPixelpin ZF2 module.
 
 Requirements
 ------------
@@ -13,7 +13,10 @@ Requirements
 Features
 --------
 * Login using passwordless authentication using pictures.
-* Built in two factor.
+* Built in optional two factor.
+* Users can sign in and register using PixelPin.
+* PixelPin Auth is avaliable for free!
+* Open Source.
 
 Installation Instructions
 ------------
