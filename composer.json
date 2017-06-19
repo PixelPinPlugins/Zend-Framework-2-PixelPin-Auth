@@ -1,13 +1,13 @@
 {
     "name": "pixelpinplugins/pixelpin-auth",
-    "description": "Uses the HybridAuth PHP library to Enable authentication via Google, Facebook, Twitter, Yahoo!, etc for the ZfcUserPixelpin ZF2 module.",
+    "description": "Uses the HybridAuth PHP library to Enable authentication via PixelPin!, etc for the ZfcUserPixelpin ZF2 module.",
     "type": "library",
     "license": "BSD-3-Clause",
     "keywords": [
         "zf2",
-        "facebook"
+        "pixelpin"
     ],
-    "homepage": "https://github.com/SocalNick/PixelpinAuth",
+    "homepage": "https://github.com/PixelPinPlugins/PixelPin-Auth",
     "authors": [
         {
             "name": "Nicholas Calugar",
