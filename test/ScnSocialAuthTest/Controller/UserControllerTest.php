@@ -1,6 +1,6 @@
 <?php
 /**
- * @link      https://github.com/SocalNick/PixelpinAuth for the canonical source repository
+ * @link      https://github.com/SocalNick/ScnSocialAuth for the canonical source repository
  * @copyright Copyright (c) 2012 Nicholas Calugar (http://socalnick.github.com)
  */
 

@@ -10,7 +10,10 @@ class ModuleOptions extends AbstractOptions
      * Turn off strict options mode
      */
     protected $__strictMode__ = false;
-
+	
+	/**
+	 * @var array 
+	 */
     protected $providers = array(
         'PixelPin'
     );
@@ -117,12 +120,11 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * set facebook enabled
+     * set PixelPin enabled
      *
-     * @param  boolean       $facebookEnabled
+     * @param  boolean       $PixelPinEnabled
      * @return ModuleOptions
      */
-
     public function setPixelPinEnabled($PixelPinEnabled)
     {
         $this->PixelPinEnabled = (boolean) $PixelPinEnabled;
@@ -131,7 +133,7 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * get facebook enabled
+     * get PixelPin enabled
      *
      * @return boolean
      */
@@ -141,9 +143,9 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * set facebook client id
+     * set PixelPin client id
      *
-     * @param  string        $facebookClientId
+     * @param  string        $PixelPinClientId
      * @return ModuleOptions
      */
     public function setPixelPinClientId($PixelPinClientId)
@@ -154,7 +156,7 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * get facebook client id
+     * get PixelPin client id
      *
      * @return string
      */
@@ -164,9 +166,9 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * set facebook secret
+     * set PixelPin secret
      *
-     * @param  string        $facebookSecret
+     * @param  string        $PixelPinSecret
      * @return ModuleOptions
      */
     public function setPixelPinSecret($PixelPinSecret)
@@ -177,7 +179,7 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * get facebook secret
+     * get PixelPin secret
      *
      * @return string
      */
@@ -187,9 +189,9 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * set facebook scope
+     * set PixelPin scopes
      *
-     * @param  string        $facebookScope
+     * @param  string        $PixelPinScope
      * @return ModuleOptions
      */
     public function setPixelPinScope($PixelPinScope)
@@ -200,7 +202,7 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * get facebook scope
+     * get PixelPin scope
      *
      * @return string
      */
@@ -210,9 +212,9 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * set facebook display
+     * set PixelPin display
      *
-     * @param  string        $facebookDisplay
+     * @param  string        $PixelPinDisplay
      * @return ModuleOptions
      */
     public function setPixelPinDisplay($PixelPinDisplay)
@@ -223,7 +225,7 @@ class ModuleOptions extends AbstractOptions
     }
 
     /**
-     * get facebook display
+     * get PixelPin display
      *
      * @return string
      */
@@ -231,7 +233,13 @@ class ModuleOptions extends AbstractOptions
     {
         return $this->PixelPinDisplay;
     }
-
+	
+	/**
+	 * set PixelPin trust forwarded.
+	 * 
+	 * @param type $PixelPinTrustForwarded
+	 * @return $this
+	 */
     public function setPixelPinTrustForwarded($PixelPinTrustForwarded)
     {
         $this->PixelPinTrustForwarded = $PixelPinTrustForwarded;
@@ -246,13 +254,6 @@ class ModuleOptions extends AbstractOptions
     {
         return $this->PixelPinTrustForwarded;
     }
-
-    /**
-     * set foursquare enabled
-     *
-     * @param  boolean       $foursquareEnabled
-     * @return ModuleOptions
-     */
 
 
     /**

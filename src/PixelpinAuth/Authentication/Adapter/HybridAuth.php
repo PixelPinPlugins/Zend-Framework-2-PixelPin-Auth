@@ -291,20 +291,27 @@ class HybridAuth extends AbstractAdapter implements EventManagerAwareInterface
     // Provider specific methods
 
     /**
-     * BitBucket to Local User
+	 * Generates a random string for the user's password.
+	 * 
+	 * @param type $length
+	 * @return string
+	 */
+    protected function generateRandomString($length = 10) 
+	{
+		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		$charactersLength = strlen($characters);
+		$randomString = '';
+		for ($i = 0; $i < $length; $i++) {
+			$randomString .= $characters[rand(0, $charactersLength - 1)];
+		}
+		return $randomString;
+	}
+	
+	/**
+     * PixelPin to Local User
      * @param $userProfile
      * @return mixed
      */
-    protected function generateRandomString($length = 10) {
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($characters);
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, $charactersLength - 1)];
-    }
-    return $randomString;
-}
-
     protected function PixelPinToLocalUser($userProfile)
     {
         if (!isset($userProfile->emailVerified) || empty($userProfile->emailVerified)) {
